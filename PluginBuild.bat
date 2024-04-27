@@ -1,0 +1,1 @@
+B:\UnrealEngine\UE_5.4\Engine\Build\BatchFiles\RunUAT.bat BuildPlugin -Plugin="B:\Projects\XStatsDemo\Plugins\XStats\XStats.uplugin" -Package="B:\Projects\XStatsDemo\Builds\XStats" -Rocket -2019
