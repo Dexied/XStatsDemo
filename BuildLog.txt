@@ -1,0 +1,98 @@
+Running AutomationTool...
+Using bundled DotNet SDK version: 8.0.412 win-x64
+Starting AutomationTool...
+Parsing command line: BuildPlugin -Plugin=B:\Projects\XStatsDemo\Plugins\XStats\XStats.uplugin -Package=B:\Projects\XStatsDemo\Builds\XStats -Rocket -2019
+Initializing script modules...
+Total script module initialization time: 0.24 s.
+Using B:\VisualStudio2022\MSBuild\Current\Bin\MSBuild.exe
+Executing commands...
+Copying 235 file(s) using max 64 thread(s)
+Reading plugin from B:\Projects\XStatsDemo\Builds\XStats\HostProject\Plugins\XStats\XStats.uplugin...
+Building plugin for host platforms: Win64
+Running: B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\ThirdParty\DotNet\8.0.412\win-x64\dotnet.exe "B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XStatsDemo\Builds\XStats\HostProject\HostProject.uproject" -plugin="B:\Projects\XStatsDemo\Builds\XStats\HostProject\Plugins\XStats\XStats.uplugin" -noubtmakefiles -manifest="B:\Projects\XStatsDemo\Builds\XStats\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealEditor-Win64-Development.txt"
+Log file: B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealEditor-Win64-Development.txt
+Using 'git status' to determine working set for adaptive non-unity build (B:\UnrealEngineSource\UnrealEngine).
+UHT compiled-in object format Default
+Parsing headers for UnrealEditor
+  Running Internal UnrealHeaderTool B:\Projects\XStatsDemo\Builds\XStats\HostProject\HostProject.uproject B:\Projects\XStatsDemo\Builds\XStats\HostProject\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEditor.uhtmanifest -WarningsAsErrors
+UHT processed UnrealEditor in 2.0100582 seconds (6 files written)
+Writing manifest to B:\Projects\XStatsDemo\Builds\XStats\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
+Building UnrealEditor...
+Using Visual Studio 2022 14.44.35220 toolchain (B:\VisualStudio2022\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 4 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 251119_184008 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+[1/4] Compile [x64] Module.XStats.cpp
+[2/4] Link [x64] UnrealEditor-XStats.lib
+[3/4] Link [x64] UnrealEditor-XStats.dll
+[4/4] WriteMetadata UnrealEditor.target [NoUba]
+
+Trace written to file B:/UnrealEngineSource/UnrealEngine/Engine/Programs/AutomationTool/Saved/Logs/UBA-UnrealEditor-Win64-Development.uba with size 3.4kb
+Total time in Unreal Build Accelerator local executor: 3.50 seconds
+
+Result: Succeeded
+Total execution time: 16.61 seconds
+Took 17,02s to run dotnet.exe, ExitCode=0
+Building plugin for target platforms: Android, IOS, Linux, LinuxArm64, TVOS, Win64, VisionOS
+Running: B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\ThirdParty\DotNet\8.0.412\win-x64\dotnet.exe "B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XStatsDemo\Builds\XStats\HostProject\HostProject.uproject" -plugin="B:\Projects\XStatsDemo\Builds\XStats\HostProject\Plugins\XStats\XStats.uplugin" -noubtmakefiles -manifest="B:\Projects\XStatsDemo\Builds\XStats\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealGame-Win64-Development.txt"
+Log file: B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealGame-Win64-Development.txt
+Using 'git status' to determine working set for adaptive non-unity build (B:\UnrealEngineSource\UnrealEngine).
+UHT compiled-in object format Default
+Parsing headers for UnrealGame
+  Running Internal UnrealHeaderTool B:\Projects\XStatsDemo\Builds\XStats\HostProject\HostProject.uproject B:\Projects\XStatsDemo\Builds\XStats\HostProject\Intermediate\Build\Win64\UnrealGame\Development\UnrealGame.uhtmanifest -WarningsAsErrors
+UHT processed UnrealGame in 1.1967724 seconds (6 files written)
+Writing manifest to B:\Projects\XStatsDemo\Builds\XStats\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
+Building UnrealGame...
+Using Visual Studio 2022 14.44.35220 toolchain (B:\VisualStudio2022\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 1 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 251119_184016 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+[1/1] Compile [x64] Module.XStats.cpp
+
+Trace written to file B:/UnrealEngineSource/UnrealEngine/Engine/Programs/AutomationTool/Saved/Logs/UBA-UnrealGame-Win64-Development.uba with size 2.9kb
+Total time in Unreal Build Accelerator local executor: 7.74 seconds
+
+Result: Succeeded
+Total execution time: 11.85 seconds
+Took 12,05s to run dotnet.exe, ExitCode=0
+Running: B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\ThirdParty\DotNet\8.0.412\win-x64\dotnet.exe "B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\XStatsDemo\Builds\XStats\HostProject\HostProject.uproject" -plugin="B:\Projects\XStatsDemo\Builds\XStats\HostProject\Plugins\XStats\XStats.uplugin" -noubtmakefiles -manifest="B:\Projects\XStatsDemo\Builds\XStats\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealGame-Win64-Shipping.txt"
+Log file: B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealGame-Win64-Shipping.txt
+Using 'git status' to determine working set for adaptive non-unity build (B:\UnrealEngineSource\UnrealEngine).
+UHT compiled-in object format Default
+Parsing headers for UnrealGame
+  Running Internal UnrealHeaderTool B:\Projects\XStatsDemo\Builds\XStats\HostProject\HostProject.uproject B:\Projects\XStatsDemo\Builds\XStats\HostProject\Intermediate\Build\Win64\UnrealGame\Shipping\UnrealGame.uhtmanifest -WarningsAsErrors
+UHT processed UnrealGame in 1.0162391 seconds (0 files written)
+Writing manifest to B:\Projects\XStatsDemo\Builds\XStats\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml
+Building UnrealGame...
+Using Visual Studio 2022 14.44.35220 toolchain (B:\VisualStudio2022\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 1 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 251119_184027 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+[1/1] Compile [x64] Module.XStats.cpp
+
+Trace written to file B:/UnrealEngineSource/UnrealEngine/Engine/Programs/AutomationTool/Saved/Logs/UBA-UnrealGame-Win64-Shipping.uba with size 2.8kb
+Total time in Unreal Build Accelerator local executor: 7.59 seconds
+
+Result: Succeeded
+Total execution time: 11.21 seconds
+Took 11,41s to run dotnet.exe, ExitCode=0
+Reading filter rules from B:\Projects\XStatsDemo\Builds\XStats\HostProject\Plugins\XStats\Config\FilterPlugin.ini
+Loading FilterPluginAndroid.ini
+Loading FilterPluginIOS.ini
+Loading FilterPluginLinux.ini
+Loading FilterPluginLinuxArm64.ini
+Loading FilterPluginTVOS.ini
+Loading FilterPluginWin64.ini
+Loading FilterPluginVisionOS.ini
+BUILD SUCCESSFUL
+AutomationTool executed for 0h 0m 41s
+AutomationTool exiting with ExitCode=0 (Success)
